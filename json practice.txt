@@ -1,0 +1,130 @@
+[
+  {
+    "order_id": 1001,
+    "customer_name": "Alice Wanjiru",
+    "email": "alice.w@gmail.com",
+    "region": "Nairobi",
+    "product": "Laptop",
+    "category": "Electronics",
+    "quantity": 2,
+    "unit_price": "85000",       // stored as string
+    "discount_%": 10,
+    "order_date": "2024-01-15",
+    "delivery_date": "15/01/2024",  // different format
+    "status": "Delivered",
+    "payment_method": "Mpesa",
+    "sales_rep": "John Kamau"
+  },
+  {
+    "order_id": 1002,
+    "customer_name": "brian otieno",      // lowercase
+    "email": null,                         // missing
+    "region": "MOMBASA",                  // all caps
+    "product": "Smartphone",
+    "category": "electronics",            // inconsistent casing
+    "quantity": 1,
+    "unit_price": 45000,
+    "discount_%": null,                    // missing
+    "order_date": "January 20, 2024",     // long date format
+    "delivery_date": "2024-01-28",
+    "status": "delivered",               // inconsistent casing
+    "payment_method": "MPESA",            // inconsistent
+    "sales_rep": "Jane Achieng"
+  },
+  {
+    "order_id": 1003,
+    "customer_name": "Carol Muthoni",
+    "email": "carol.m@yahoo.com",
+    "region": "Kisumu",
+    "product": "Office Chair",
+    "category": "Furniture ",           // trailing space
+    "quantity": "3",                      // quantity as string
+    "unit_price": 12500,
+    "discount_%": 5,
+    "order_date": "2024-02-03",
+    "delivery_date": null,               // not yet delivered
+    "status": "Pending",
+    "payment_method": "Credit Card",
+    "sales_rep": null                    // unassigned
+  },
+  {
+    "order_id": 1004,
+    "customer_name": "David Kipchoge",
+    "email": "davidk@",                 // invalid email
+    "region": "Nakuru",
+    "product": "Desk",
+    "category": "FURNITURE",            // all caps, same as "Furniture"
+    "quantity": 1,
+    "unit_price": -8000,                // negative price (error)
+    "discount_%": 0,
+    "order_date": "03-02-2024",          // DD-MM-YYYY format
+    "delivery_date": "2024-02-10",
+    "status": "Shipped",
+    "payment_method": "Cash",
+    "sales_rep": "John Kamau"
+  },
+  {
+    "order_id": 1005,
+    "customer_name": "Alice Wanjiru",
+    "email": "alice.w@gmail.com",
+    "region": "Nairobi",
+    "product": "Laptop",
+    "category": "Electronics",
+    "quantity": 2,
+    "unit_price": "85000",
+    "discount_%": 10,
+    "order_date": "2024-01-15",
+    "delivery_date": "15/01/2024",
+    "status": "Delivered",
+    "payment_method": "Mpesa",
+    "sales_rep": "John Kamau"           // exact duplicate of order 1001
+  },
+  {
+    "order_id": 1006,
+    "customer_name": "  Esther Njeri  ",  // leading/trailing spaces
+    "email": "ESTHER.N@OUTLOOK.COM",     // all caps email
+    "region": "Eldoret",
+    "product": "Printer",
+    "category": "Electronicss",           // typo
+    "quantity": 1,
+    "unit_price": 23000,
+    "discount_%": 15,
+    "order_date": "2024/03/01",           // slash-separated
+    "delivery_date": "2024-03-08",
+    "status": "DELIVERED",              // all caps
+    "payment_method": "credit card",    // lowercase
+    "sales_rep": "Jane Achieng"
+  },
+  {
+    "order_id": 1007,
+    "customer_name": "Francis Mwangi",
+    "email": "francis@corp.ke",
+    "region": null,                      // unknown region
+    "product": "Monitor",
+    "category": "Electronics",
+    "quantity": 4,
+    "unit_price": 18500,
+    "discount_%": 20,
+    "order_date": "2024-03-15",
+    "delivery_date": "2024-03-15",       // same as order date (suspicious)
+    "status": "Delivered",
+    "payment_method": "Bank Transfer",
+    "sales_rep": "Peter Odhiambo"
+  },
+  {
+    "order_id": 1008,
+    "customer_name": "Grace Adhiambo",
+    "email": "grace.a@gmail.com",
+    "region": "Mombasa",
+    "product": "Keyboard",
+    "category": "Accessories",
+    "quantity": 999,                     // outlier / likely error
+    "unit_price": 3500,
+    "discount_%": 0,
+    "order_date": "2024-04-01",
+    "delivery_date": "2024-04-09",
+    "status": "Returned",
+    "payment_method": "Mpesa",
+    "sales_rep": "John Kamau"
+  }
+]
